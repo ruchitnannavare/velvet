@@ -61,16 +61,13 @@ def encrypt(x):
                         jak += 1
             ilo += 1
 
-    LES = int(y2)
+    lassiter = int(y2)
+
     for character in characters:
         summation = 0
-        for number in range(int(x[-1])):
-            summation += int(list_queen[LES + number])
-
+        summation += int(list_queen[lassiter])
         crisscrossed[character] = str(summation)
-        LES += int(x[-2])
-
-    print(crisscrossed)
+        lassiter += int(x[-2])
     return crisscrossed
 
 
